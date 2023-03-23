@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ 
+ <head>
+ 
+<!-- En-tête du document Si avec l'UTF8 cela ne fonctionne pas mettez charset=ISO-8859-1 -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+  <!-- Balise meta  -->
+  <meta name="title" content="Titre de la page" />
+  <meta name="description" content="description de la page"/>
+  <meta name="keywords" content="mots-clé1, mots-clé2, ..."/>
+ 
+  <!-- Indexer et suivre 
+  <meta name="robots" content="index,follow" /> -->
+ 
+  <!--  Relier une feuille CSS externe  
+  <link rel='stylesheet' href='votre-fichier.css' type='text/css' /> -->
+
+
+  <!-- Incorporez du CSS dans la page  -->
+
+      <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+  <link href="signin.css" rel="stylesheet">
+  <link href="cover.css" rel="stylesheet">
+ 
+ <title> SPA </title>
+ 
+ </head>
+ 
+ 
+ <body class="text-center">
+
+
+
+<main class="form-signin">
+  <h1> Bienvenue sur le site de la SPA </h1>
+
+  <h3> Employé(e) à la SPA? Authentifier vous . </h3>
+
+  <form action = "auth_employe.php" method = "post">
+    <table>
+      <tr><td><label for="login"> Login </label></td><td><input type="text" name="login" /></td></tr>
+      <tr><td><label for="mdp"> Mot de passe </label></td><td><input type="password" name="mdp"></td></tr>
+    </table>
+    <br/>
+    <input type="reset" name="reset" value="Effacer"/>
+    <input type="submit" name="submit" value="valider">
+  </form>
+</main>
+ 
+ </body>
+</html>
